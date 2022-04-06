@@ -34,25 +34,17 @@ function draw() {
   edges= createEdgeSprites();
   rabbit.collide(edges);
  
-   drawSprites();
-} 
+  
+
 
 // var select_sprites = Math(random(1,3));
-redL = Math.random(1,3);
-orangeL = Math.random(1,3);
-apple = Math.random(1,3);
+
 // var select_sprites = Math.random(random(1,3));
-redL = Math.random(1,3)
-orangeL = Math.random(1,3)
-apple = Math.random(1,3)
+
 // var select_sprites = Math.round(1,3);
-redL = Math.round(1,3)
-apple = Math.round(1,3)
-orangeL = Math.round(1,3)
-// var select_sprites = Math.round(random(1,3));
-redL = Math.round(1,3)
-orangeL = Math.round(1,3)
-apple = Math.round(1,3)
+
+ var select_sprites = Math.round(random(1,3));
+
   
   // if (frameCount % 50 == 0) {
   //   if (select_sprites == 1) {
@@ -64,31 +56,17 @@ apple = Math.round(1,3)
   //   }
   // }
 
-  if (frameCount % 50 == 0) {
-     if (apple == 1) {
-      createApples();
-     } else if (orangeL == 2) {
+  
+  
+   if (frameCount % 80 == 0) {
+     if (select_sprites == 1) {
+       createApples();
+     } else if (select_sprites == 2) {
        createOrange();
-     }else if(redL == 3 )  {
-       createRed();
      }
    }
-  
-  // if (frameCount % 80 == 0) {
-  //   if (select_sprites == 1) {
-  //     createApples();
-  //   } else if (select_sprites == 2) {
-  //     createOrange();
-  //   }
-  // }
  
-   if (frameCount % 80 == 0) {
-     if (apple == 1) {
-      createApples();
-    } else if (orangeL == 2) {
-      createOrange();
-    }
-   }
+  
   // if (frameCount / 80 == 0) {
   //   if (select_sprites == 1) {
   //     createApples();
@@ -98,36 +76,18 @@ apple = Math.round(1,3)
   //     createRed();
   //   }
   // }
-  if (frameCount / 80 == 0) {
-    if(apple == 1 ){
-      createApples();
-    }else if (orangeL == 2){
-  createOrange()
-    }else if (redL == 3) {
-      createRed()
-    }
-    
-  }
-  
+ 
   // if (frameCount % 80 = 0) {
   //   if (select_sprites == 1) {
   //     createApples();
-  //   } else if (select_sprites == 2) {
+  //  } else if (select_sprites == 2) {
   //     createOrange();
-  //   }else {
+  //  }else {
   //     createRed();
-  //   }
+  //}
   // }
-  if (frameCount % 80 == 0 ) {
-    if(apple == 1 ){
-      createApples();
-    }else if (orangeL == 2){
-  createOrange()
-    }else if(redL == 3) {
-      createRed()
-    }
-  }
-  
+  drawSprites();
+}
 
 
 function createApples() {
